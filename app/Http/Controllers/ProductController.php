@@ -71,9 +71,9 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
   
         if ($product->delete()) {
-            return redirect(route('welcome'))->with('success', 'Deleted!');
+            return redirect(route('index'))->with('success', 'Deleted!');
         }
   
-        return redirect(route('welcome'))->with('error', 'Sorry, unable to delete this!');
+        return redirect(route('index'))->with('error', 'Sorry, unable to delete this!');
     }
 }
