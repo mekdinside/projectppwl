@@ -51,6 +51,14 @@
                                 <label class="form-label">Stock</label>
                                 <input type="text" class="form-control" name="stock" value="{{ old('stock') }}" placeholder="Stock">
                             </div>
+                            <div class="mb-3">
+                                <label class="form-label">Brand</label>
+                                <input type="text" class="form-control" name="brand" value="{{ old('brand') }}" placeholder="Brand">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Category</label>
+                                <input type="text" class="form-control" name="category" value="{{ old('category') }}" placeholder="Category">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary" type="submit">Create</button>
